@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<title>Kathryn Cross</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="icon" href="star.png">
+</head>
+
+<body>
+
+<!--Rotating text-->
+<script>
+$(function () {
+  count = 0;
+  wordsArray = ["KATHRYN CROSS", "UX/UI DESIGNER", "ANALYST", "INNOVATOR"];
+  setInterval(function () {
+    count++;
+    $("#changing-word").fadeOut(550, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(550);
+    });
+  }, 2000);
+});
+</script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">
+    <span id="changing-word">KATHRYN CROSS</span></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="KathrynCross Resume copy.pdf" class="w3-bar-item w3-button">RESUME</a>
+      <a href="#work" class="w3-bar-item w3-button">WORK</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">CLOSE ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="KathrynCross Resume copy.pdf" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+</nav>
+
+
+<!--photos on first page-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container topimages">
+  <a href="#expressID"><img id="express" width="240" height="362" src="express image.jpg" alt="express" style="filter: grayscale(100%);">
+  </a>	
+  		<div class="w3-container w3-center">
+  			<p href="#expressID"><b>Express App Redesign</b></p>
+  		</div>
+  </div>
+
+  <div class="column container topimages">
+  <a href="#focusID"><img id="focus" width="240" height="362" src="focus.jpg" alt="express" style="filter: grayscale(100%);">
+  </a>	
+  		<div class="w3-container w3-center">
+  			<p href="#focusID"><b>Focus: Photo App Design</b></p>
+  		</div>
+  </div>
+  
+  <div class="column container topimages">
+  <a href="#cpkID"><img id="cpk" width="240" height="362" src="cpk image.png" alt="cpk" style="filter: grayscale(100%);">
+  </a>	
+  		<div class="w3-container w3-center">
+  			<p href="#cpkID"><b>CPK App Redesign</b></p>
+  		</div>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-center row">
+   
+  <div class="column container topimages">
+  <a href="#ohID"><img id="oh" width="240" height="362" src="oh.png" alt="oh" style="filter: grayscale(100%);">
+  </a>	
+  		<div class="w3-container w3-center">
+  			<p href="#ohID"><b>Office Hours App + Bot Design</b></p>
+  		</div>
+   </div>
+   
+  <div class="column container topimages">
+  <a href="#pathfinderID"><img id="oh" width="240" height="362" src="pathfinder.png" alt="pathfinder" style="filter: grayscale(100%);">
+  </a>	
+  		<div class="w3-container w3-center">
+  			<p href="#pathfinderID"><b>Citizens' Re-entry App Design</b></p>
+  		</div>
+   </div>
+   
+  <div class="column container topimages">
+  <a href="#dressID"><img id="oh" width="240" height="362" src="dress.png" alt="pathfinder" style="filter: grayscale(100%);">
+  </a>	
+  		<div class="w3-container w3-center">
+  			<p href="#dressID"><b>Dress + Purse Design + Creation</b></p>
+  		</div>
+   </div>
+
+</div>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:120px 16px" id="about">
+<img src="IMG_7222.jpg" alt="Avatar" width="200" height="225" class="center">
+  <h2 class="w3-center" style="font-family: Comfortaa;">☆KATHRYN CROSS☆</h2>
+  <p class="w3-center w3-large" style="font-family: Comfortaa;">Wellesley College, Class of 2020</p>
+  <p class="w3-center w3-large" style="font-family: Comfortaa;">Economics & Media Arts + Sciences</p>
+  <p class="w3-center w3-large" style="font-family: Comfortaa;">People Person, Efficient Multitasker & Avid Learner</p>
+  <div class="w3-row-padding w3-center" style="margin-top:35px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">UX/UI Design</p>
+      <p>I have designed and re-designed numerous iOS applications, ameliorating user experiences and user interfaces with
+      Sketch, Illustrator, inDesign, Photoshop, JavaScript, HTML, CSS, jQuery, and Xd.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Financial & Economic Data Analysis</p>
+      <p>Within Somar Capital Management LP and MIT, 
+      I have conducted investment, business law, and political science research, familiarizing me 
+      with Excel, Securities Law, Python, and more.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-pencil-square-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Legal Work</p>
+      <p>I have worked with Harvard Law School and MIT Sloan School of Management 
+      lawyers, law professors, and legal clients, piquing my interest in 
+      the interactions between corporate compliance, business law, and cybersecurity.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-share-alt w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Communications</p>
+      <p>I have been writing for national
+      publications since I was 12 years old, fostering
+      my passion for people and their interactions within the economy, legal world, 
+      and technological advancements.</p>
+    </div>
+  </div>
+</div>
+<p id="work"></p>
+<br>
+
+<!-- Work Section -->
+<div class="w3-padding-32">
+  <h1 class="w3-center" id="focusID">☆WORK☆</h1>
+<div class="w3-row-padding">
+
+<!--Focus-->
+<div class="w3-col 18 m6">
+  <h2 class="w3-center">Focus Editing App</h2>
+  <p> This app is a platform for streamlining all popular means of editing photos.  
+  It includes:
+  <ul>
+  	<li>Airbrushing a face/body to one's liking</li>
+  	<li>Photoshopping a part of one photo onto another</li>
+  	<li>Collaging photos together</li>
+  	<li>Adding filters to a photo</li>
+  	<li>Adjusting the clarity, brightness, contrast, saturation, graininess, and temperature 
+  	of a photo.</li>
+  </ul>
+</div>
+
+<div class="w3-col 14 m6">
+	<video playsinline autoplay muted loop class="w3-image w3-right w3-hide-small" width="240" height="362">
+		<source src="Focus App.mp4" type="video/mp4">
+	</video>
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<video playsinline autoplay muted loop class="w3-image w3-margin-top" width="240" height="362">
+		<source src="Focus App.mp4" type="video/mp4">
+	</video>
+</div>
+
+</div>
+</div>
+
+<br>
+<p class="w3-center">
+The following Hierarchal Task Analysis (HTA) model determines the app's tasks</p>
+<img src="HTA.jpg" alt="Avatar" width="700" height="450" class="center" style="padding: 10px 30px">
+<br>
+<p class="w3-center">
+User Analysis + User Personas</p>
+
+<div class="w3-row-padding">
+
+<div class="w3-col 18 m6">
+  <p> The User Personas are mainly members of Generation Z and Millennials, who utilize social 
+  media and want to edit, produce, and post high-quality photos.  This is why the logo 
+  of Focus involves Millennial Pink, which is a color that many popular products today are 
+  characterized by. The app will allow users to upload a photo immediately after taking it or from a photo library.
+</div>
+
+<div class="w3-col 14 m6">
+	<img src="focus interface 2.jpg" class="w3-image w3-right w3-hide-small" width="240" height="362">
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<img src="focus interface 2.jpg" class="w3-image w3-margin-top" width="240" height="362">
+	</div>
+</div>
+
+</div>
+
+<p class="w3-center" id="cpkID">All in all, this app design will allow users to: <br>
+Airbrush | Smooth | Acne | Reshape | Whiten | Make-up | Filter | Photoshop | Collage
+</p>
+<br>
+<br>
+
+<!--CPK App-->
+<div class="w3-row-padding">
+
+<div class="w3-col 18 m6">
+  <h2 class="w3-center">California Pizza Kitchen App</h2>
+  <p> This app currently allows its users to order online, find a CPK restaurant near them, look at 
+  new seasonal features, and track available rewards points.  However, I conducted user experience 
+  research, examined the current design, and formulated a redesign concept.  With my redesign, 
+  customers can:
+  <ul>
+  	<li>Reserve a table at a nearby location</li>
+  	<li>Attain CPK Rewards points through an ameliorated points tracking system</li>
+  	<li>Enhance his, her, or their ordering experience with a more user-friendly interface</li>
+  	<li>Examine new seasonal features and filter the menu with dietary preferences</li>
+  </ul>
+</div>
+
+<div class="w3-col 14 m6">
+	<video playsinline autoplay muted loop class="w3-image w3-right w3-hide-small" width="240" height="362">
+		<source src="cpk design.mp4" type="video/mp4">
+	</video>
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<video playsinline autoplay muted loop class="w3-image w3-margin-top" width="240" height="362">
+		<source src="cpk design.mp4" type="video/mp4">
+	</video>
+    </div>
+</div>
+</div>
+
+<p class="w3-center">
+User Experience Research on the Current App
+</p>
+
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container">
+  <img width="240" height="362" src="cpkex1 2.jpeg" alt="cpk">	
+  </div>
+
+  <div class="column container">
+  <img width="240" height="362" src="cpkex2 2.jpg" alt="cpk">	
+  </div>
+  
+  <div class="column container">
+  <img width="240" height="362" src="cpkex3 2.jpeg" alt="cpk">
+   </div>
+
+</div>
+
+<div style="padding: 10px">
+<p class="w3-center">
+I took to the Apple App Store to carry out User Experience research.</p>
+
+<p>
+“Please add ability to enter CPK gift cards as a form of payment in the app.  
+This would streamline paying as well.” - joe733</p>
+
+<p>“It would be nice if they used a little bigger font.  It is too small currently” -johndoe99</p>
+
+<p>“Finally mobile pay works but still can’t redeem pizza dough rewards through mobile pay.  
+Something to work on I guess.” -Shripathi</p>
+
+<p>“No menu prices on menu items.” -Fralupo</p>
+
+<p>I additionally carried out User Experience Research by examining what people look for most 
+frequently in restaurant applications.  According to Urban Taste Bud, the best restaurant 
+apps are those that:
+<ul>
+	<li>Allow people to make reservations for free</li>
+	<li>Get rewards points/dining credits through reservations</li>
+	<li>Allow users to navigate menus in terms of their vegetarian, vegan, paleo, low carb, 
+	and gluten-free options</li>
+	<li>Arrange a delivery/pick-up</li>
+</ul>
+<p style="text-indent:2.0em">
+Upon further research, I saw that the Starbucks app is often venerated for its 
+user-friendliness and efficient capabilities.
+
+Nonetheless, at the moment, the CPK app is hard to navigate, void of aesthetic,
+ and has an extensive side bar with unnecessary tabs.
+<br>
+<br>
+</div>
+
+<p class="w3-center">
+Redesign Concept</p>
+
+<div class="w3-row-padding">
+<div class="w3-col 18 m6">
+  <p> I completely eliminated the sidebar seeing as it only worsens user experience.  
+Instead, I placed the most important and in-demand features of a restaurant app at the very top.  
+This way, someone can reserve a table at a given location, pay for an item, track CPK Rewards points, and place an order.  
+The original New + Seasonal Tab mostly contained advertisements surrounding new products, so I placed that at the home page.</p>
+</div>
+
+<div class="w3-col 14 m6">
+	<img src="cpkinterface1.png" class="w3-image w3-right w3-hide-small" width="240" height="362">
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<img src="cpkinterface1.png" class="w3-image w3-margin-top" width="240" height="362">
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+<div class="w3-row-padding">
+<div class="w3-col 18 m6">
+  <p> The reserve space will immediately direct the user to a map--allowing them to look at nearby 
+CPK locations based on the location that the app will track.  
+At the moment, the “Locations” tab does not immediately open to a map--there is solely an input for a zip code.  
+The CPK Rewards tab will introduce a completely new concept.  It will allow CPK Rewards to be administered electronically.  
+Customers can gift CPK cards to one another and they can additionally get virtual CPK gift cards if they 
+order online enough or accumulate enough points through restaurant visits.  
+This will incentivize CPK Rewards to be used.</p>
+</div>
+
+<div class="w3-col 14 m6">
+	<img src="cpkinterface2.png" class="w3-image w3-right w3-hide-small" width="240" height="362">
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<img src="cpkinterface2.png" class="w3-image w3-margin-top" width="240" height="362">
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+<div class="w3-row-padding">
+<div class="w3-col 18 m6">
+  <p> The Place Order tab will additionally introduce a new concept.  Rather than simply opening to a “View Menu/Place Order” tab 
+that links one to a location, the page will first open to cater towards the consumers’ needs, inquiring about any potential 
+filters that the user may want to utilize before going straight to the menu.  The background is a pizza from CPK.  
+The buttons will allow people to filter exactly what they are looking for.  </p>
+</div>
+
+<div class="w3-col 14 m6">
+	<img src="cpkinterface3.png" class="w3-image w3-right w3-hide-small" width="240" height="362">
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<img src="cpkinterface3.png" class="w3-image w3-margin-top" width="240" height="362">
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+<div class="w3-row-padding">
+<div class="w3-col 18 m6">
+  <p> After choosing various options, the next place order interface will show the various options, their price, and their calories.  
+Upon further inquiry, customers can look at the various ingredients that each one has to offer by clicking on the arrows 
+or one can immediately place the order by clicking on the yellow button that will allow them to quickly place their orders 
+and add items to their cart.  After choosing the various items that one wants to order, consumers can click on “Review Cart” 
+in order to get to the Place Order Interface 3.
+“Review Cart” and “Pay” will take the user to the same place--a place where one can order before check out.  </p>
+</div>
+
+<div class="w3-col 14 m6">
+	<img src="cpkinterface4.png" class="w3-image w3-right w3-hide-small" width="240" height="362">
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<img src="cpkinterface4.png" class="w3-image w3-margin-top" width="240" height="362">
+    </div>
+</div>
+</div>
+<p id="expressID"></p>
+<br>
+<br>
+
+<!--Express App-->
+<h2 class="w3-center">Express App Redesign</h2>
+<div style="padding:10px">
+<p class="w3-center">
+In the current app, consumers can manage his, her, or their shopping of Express items.  
+A cart can also be managed through the app.</p>
+
+<p class="w3-center">
+User Experience Research
+</p>
+
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container">
+  <img width="240" height="362" src="express1.jpeg" alt="cpk">	
+  </div>
+
+  <div class="column container">
+  <img width="240" height="362" src="express2.jpeg" alt="cpk">	
+  </div>
+  
+  <div class="column container">
+  <img width="240" height="362" src="express 4.jpeg" alt="cpk">
+   </div>
+</div>
+
+<p> I took to the App Store to carry out User Experience Research in order to identify how 
+to ameliorate this application.   Most App reviews for the Express app had to do with software bugs,
+ such as the application closing too frequently or freezing sporadically.  
+ The only top comment regarding User Interface was a suggestion surrounding having a potential 
+ “favorite” option so that consumers can examine what they may want to purchase, but 
+ do not want to add to their cart just yet. I additionally examined other shopping 
+ applications in the same industry (American fashion retail) that had higher app review ratings.
+</p>
+
+<p class="w3-center">
+Redesign Concept
+</p>
+
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container">
+  <img width="240" height="362" src="expressre.png" alt="cpk">	
+  </div>
+
+  <div class="column container">
+  <img width="240" height="362" src="expressre2.png" alt="cpk">	
+  </div>
+  
+  <div class="column container">
+  <img width="240" height="362" src="expressre3.jpeg" alt="cpk">
+   </div>
+</div>
+<p>
+I added the favorite button, as per the suggestion of the reviewer.  
+I also added a bag icon next to the favorite button in order to allow users to “quick shop,” 
+or add the item in their bag without opening the full interface with the product.  
+Additionally, I streamlined the process of getting to the side bar by placing all of these 
+options at the very top of the application.  Likewise, I placed some of the most important 
+aspects of an application--the store locator, trend snap, and express AR, at the bottom of the 
+application so that they can be accessed at all times regardless of what the shopper is doing.  
+This overall improves the user experience because there is a sense of the various capabilities 
+within the application just from the first page.
+</p>
+<p id="ohID"></p>
+</div>
+<br>
+<br>
+
+<!--Office hours app design-->
+<h2 class="w3-center">Office Hours App + Bot Design</h2>
+<div style="padding:10px">
+<p class="w3-center">
+Within Wellesley's Human-Computer Interaction course, I worked with three classmates to build a low- 
+and high-fidelity prototype for an app that would help students better organize their 
+time and attend office hours.  To supplement the app, I additionally created a bot that
+could potentially serve the same purpose.</p>
+
+<p class="w3-center">
+User Research + Low-Fidelity Prototype Design
+</p>
+
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container">
+  <img width="375" height="812" src="lf1.jpg" alt="lf">	
+  </div>
+
+  <div class="column container">
+  <img width="375" height="812" src="lf2.jpg" alt="lf">	
+  </div>
+  
+  <div class="column container">
+  <img width="375" height="812" src="lf3.jpg" alt="lf">
+   </div>
+</div>
+
+<p> I interviewed students in order to complete user research.  I inquired with students about
+what they looked for during office hours, what they would like to see in an office hours app, and what kind
+of obstacles they face while attempting to attend office hours at the moment.  
+I utilized Invision in order to design this app, modeling the design after what users 
+would potentially look for during office hours: how to navigate the queue and communicate
+with a professor or teacher's assistant.  
+</p>
+
+<p class="w3-center">
+High-Fidelity Prototype Design
+</p>
+
+<p> The high-fidelity prototype was additionally designed with Invision.  After testing the low-fidelity
+prototype with four different users, feedback was taken into account when designing the high-fidelity prototype.
+It can be tested 
+<a href="https://invis.io/AURMK1W5Q3G">here.</a>
+</p>
+
+<div class="w3-row-padding">
+
+<div class="w3-col 18 m6">
+<br>
+<br>
+<br>
+  <p> Bot Design:
+   <br>Inspired by my group project for CS220, this chatbot is designed 
+  for Wellesley students 
+who would like to attend office hours.  Students would use it in order to have a central 
+resource for office hour information, given that office hour information is often sprawled 
+across various syllabi, websites, and papers.  They would use it if they have an impending 
+question or an upcoming problem set or test and they know that they would like to attend 
+office hours at some point this week.  The prototype was created with Botsociety.
+</p>
+</div>
+
+<div class="w3-col 14 m6">
+	<video playsinline autoplay muted loop class="w3-image w3-right w3-hide-small" width="240" height="362">
+		<source src="ohbot.mp4" type="video/mp4">
+	</video>
+	<div class="w3-center w3-hide-large w3-hide-medium">
+	<video playsinline autoplay muted loop class="w3-image w3-margin-top" width="240" height="362">
+		<source src="ohbot.mp4" type="video/mp4">
+	</video>
+    </div>
+</div>
+</div>
+<p id="pathfinderID">
+
+<br>
+<br>
+
+<!--Pathfinder app design-->
+<h2 class="w3-center">Citizens' Re-entry App Design</h2>
+<div style="padding:10px">
+<p class="w3-center">
+Within the Massachusetts Institute of Technology's Civic Media Lab, I created an early sketch
+of a platform from my perspective as to what kind of app would be most useful for case managers 
+aiding re-entering citizens.  This kind of platform is meant to reduce recidivism.</p>
+
+<p class="w3-center">
+User Research
+</p>
+I analyzed case studies, such as the AT&T Upskilling Initiative, Cognizant Reskilling and 
+Upskilling, GE mid-career leadership programs, and FutureFit AI, ultimately coming to the 
+conclusion that recidivism rates are successfully reduced through access to vocational 
+education, proper healthcare, adequate residencies, and fulfilling employment opportunities.  
+Thus, I created this app with the idea that case managers should organize how their clients 
+are progressing in each of the aforementioned fields.  Capitalizing on the design principles of
+white space, alignment, metaphors, and the proximity gestalt principle, the following app 
+was created.
+
+<img src="p1.png" alt="Avatar" width="700" height="450" class="center" style="padding: 10px 30px">
+<img src="p2.png" alt="Avatar" width="700" height="450" class="center" style="padding: 10px 30px">
+<img src="p3.png" alt="Avatar" width="700" height="450" class="center" style="padding: 10px 30px">
+<img src="p4.png" alt="Avatar" width="700" height="450" class="center" style="padding: 10px 30px">
+</div>
+
+<p id="dressID">
+<br>
+<br>
+
+
+<!--dress design-->
+<h2 class="w3-center">Dress + Purse Design + Creation</h2>
+<div style="padding:10px">
+<p class="w3-center">
+Initially inspired by the fembots of "Austin Powers" as well as Jacquemus's idea of a tiny 
+purse, I created this dress and purse from scratch utilizing two square yards of pink satin, two yards 
+of white fur, an old white sports t-shirt, pink latex, a hot glue gun, and a sewing machine.  This
+dress was debuted at Babson's Weissman Foundry fashion show.  Pictures of the creation, consequent 
+fashion show debut, and the final look on myself are below.</p>
+
+<br>
+<br>
+
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container">
+  <img width="375" height="812" src="dress-0.jpeg" style="transform:rotate(90deg);" alt="lf">	
+  </div>
+
+  <div class="column container">
+  <img width="375" height="812" src="dress-2.jpeg" alt="lf">	
+  </div>
+  
+  <div class="column container">
+  <img width="375" height="812" src="dress0.png" alt="lf" style="transform:rotate(90deg);">
+   </div>
+</div>
+<br>
+
+<div class="w3-content w3-container w3-center row">
+
+  <div class="column container">
+  <img width="375" height="812" src="dress.png" alt="lf">	
+  </div>
+
+  <div class="column container">
+  <img width="375" height="812" src="dress2.png" alt="lf">	
+  </div>
+  
+  <div class="column container">
+  <img width="375" height="812" src="dress4.jpeg" alt="lf">
+   </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-12">
+  <a href="index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="mailto: kcross@wellesley.edu"><i class="fa fa-envelope-o w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/kathryn-c-19427aa2"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>© Kathryn Cross 2018</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

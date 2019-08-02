@@ -1,0 +1,46 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Comfortaa", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    background-image: url("background.jpg")
+}
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.topimages:active{
+	background-color: white;
+  box-shadow: 0 0 11px;
+  transform: translateY(4px);
+}
+
+.topimages:hover{
+	box-shadow: 0 0 20px;
+	rgba(33,33,33,0.2); 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
